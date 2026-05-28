@@ -1,3 +1,4 @@
+import { HeartBreak } from '@boxicons/react';
 import { useState } from "react"
 
 const QuotesApp = () => {
@@ -34,7 +35,13 @@ const QuotesApp = () => {
         <div className="container">
             <div className="quotes-app">
                 <h1 className="app-heading">Yeote.</h1>
-                <i className="bx bxs-heart fav-icon" onClick={toggleFav}></i>
+                <HeartBreak
+                    className="fav-icon"
+                    onClick={toggleFav}
+                    size="xl"
+                    pack="basic"
+                    aria-label="Toggle favourites"
+                />
                 <div className="quote">
                     <i className="bx bxs-quote-alt-left left-quote"></i>
                     <p className="quote-text">{quote.text}</p>

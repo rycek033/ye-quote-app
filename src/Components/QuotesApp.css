@@ -26,12 +26,12 @@
     position: absolute;
     top: 5rem;
     right: 5rem;
-    font-size: 4rem;
-    background-image: linear-gradient(to bottom, #FF1E00, #CC0000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    width: 3.4rem;
+    height: 3.4rem;
+    color: #ff1e00;
     cursor: pointer;
     filter: drop-shadow(0.3rem 0.3rem 0px rgba(0, 0, 0, 0.6));
+    transition: transform 0.12s ease;
 }
 .fav-icon:active {
     transform: translate(0.2rem, 0.2rem);
@@ -49,7 +49,7 @@
 }
 
 .quote i{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #dddd;
 }
 
