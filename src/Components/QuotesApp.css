@@ -1,0 +1,227 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #92a1b3, #2c394b, #181816);
+    place-items: center;
+}
+
+.quotes-app {
+    width: 90vmin;
+    aspect-ratio: 3/2;
+    background-color: #212226;
+    border-radius: 3rem;
+    padding: 4rem;
+    box-shadow: -2rem 2rem 6rem rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.app-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    color: #ffff;
+}
+
+.fav-icon{
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    font-size: 4rem;
+    background-image: linear-gradient(to bottom, #FF1E00, #CC0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    filter: drop-shadow(0.3rem 0.3rem 0px rgba(0, 0, 0, 0.6));
+}
+.fav-icon:active {
+    transform: translate(0.2rem, 0.2rem);
+    filter: drop-shadow(0.1rem 0.1rem 0px rgba(0, 0, 0, 0.8));
+}
+
+.quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.quote i{
+    font-size: 3rem;
+    color: #dddd;
+}
+
+.quote-text {
+    font-family: 'AwesomeBipolar', sans-serif;
+    font-size: clamp(5rem, 5vw, 2.5rem);
+    color: #39FF14;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    width: clamp(25rem, 35cqi, 50rem);
+}
+
+.quote-author {
+    font-family: 'AwesomeBipolar', cursive;
+    font-size: 2.7rem;
+    color: #39FF14;
+    text-align: right;
+}
+
+.right-quote {
+    text-align: right;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    column-gap: 2rem;
+}
+
+.btn {
+    width: 18rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: none;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    box-shadow: 3rem 1rem 4rem rgba(0, 0, 0, 0.3);
+    text-shadow: -0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0.1rem);
+}
+
+.btn-new {
+    background-image: linear-gradient(to right, #2ab310, #39FF14);
+    color: #181816; 
+    font-weight: bold;
+
+    box-shadow: 0 0.5rem 1.5rem rgba(57, 255, 20, 0.2); 
+    border: none;
+}
+
+.btn-fav {
+    background-image: linear-gradient(to right, #E5D3B3, #D87B75, #7A8B99);
+    color: #181816;
+    box-shadow: 0 0.5rem 1.5rem rgba(216, 123, 117, 0.3);
+}
+
+.circles div {
+    position: absolute;
+    border-radius: 50%;
+    aspect-ratio: 1;   
+}
+
+
+
+.favourites {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+
+    background-color: #F58B57;
+
+    padding: 3rem 7rem 3rem 3rem;
+    overflow-y: auto;
+}
+
+.favourites::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+.favourites::-webkit-scrollbar-track {
+    background: rgb(70, 69, 69);
+}
+
+.favourites::-webkit-scrollbar-thumb {
+    background: #252525;
+    border-radius: 4rem;
+}
+
+.favourites::-webkit-scrollbar-thumb:hover {
+    background: #0000;
+    border-radius: 4rem;
+}
+
+.fav-quote {
+    display: flex;
+    column-gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.btn-close {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-close i {
+    font-size: 3rem;
+    color: #000000;
+}
+
+.fav-quote-delete {
+    font-size: 2.5rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+.fav-quote-text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: -0.05rem;
+}
+
+.fav-quote-author {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    text-align: right;
+    color: #000000;
+}
+
+.tlop-header-group {
+    margin-bottom: 4rem; 
+}
+
+.tlop-footer-group {
+    margin-top: 4rem;
+}
+
+@media (max-width: 850px) {
+    .quotes-app {
+        width: 75vmin;
+        aspect-ratio: 2/3;
+    }
+}
+
+@media (max-width: 550px) {
+    .quotes-app {
+        width: 75vmin;
+        aspect-ratio: 1/2;
+    }
+
+    .buttons{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}
