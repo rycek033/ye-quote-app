@@ -1,4 +1,3 @@
-Markdown
 # Yeote. 🏔️
 
 A React-based quote generator that delivers random thoughts and quotes from Kanye West (Ye), utilizing the [kanye.rest](https://kanye.rest/) API. 
